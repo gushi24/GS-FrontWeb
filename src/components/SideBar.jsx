@@ -49,7 +49,7 @@ export default function SideBar({ children }) {
 export function SideBarItem({icon, text, active}) {
   const {expanded} = useContext(SideBarContext)
   return(
-    <li className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer
+    <li className={`relative flex items-center py-2 px-2 my-1 font-medium rounded-md cursor-pointer
       transition-color group
       ${
         active
