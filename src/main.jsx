@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
+import Cadastrar from './routes/Cadastrar.jsx'
 import Error from './routes/Error.jsx'
 import Home from './routes/Home.jsx'
 import Login from './routes/Login.jsx'
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 
     children:[
       {path:'/',element:<Home/>},
+      {path:'/cadastrar',element:<Cadastrar/>},
       {path:'/login',element:<Login/>},
       {path:'/sobre',element:<Sobre/>},
       {path:'/solução',element:<Solução/>},
